@@ -41,15 +41,16 @@
         </translate>
         <events>
             <adminhtml_block_html_before>
-                <observers>
-                    <optbelogin_adminhtml_block_html_before>
-                        <type>singleton</type>
-                        <class>SchumacherFM_OptBeLogin_Model_Observer_AdminhtmlBlock</class>
-                        <method>alterEavBlockTemplate</method>
-                    </optbelogin_adminhtml_block_html_before>
-                </observers>
-            </adminhtml_block_html_before>
 
+                    <observers>
+                        <OptBeLogin_SetTemplate>
+                            <class>optbelogin/observer</class>
+                            <method>setAdminLoginTemplate</method>
+                        </OptBeLogin_SetTemplate>
+                    </observers>
+
+
+            </adminhtml_block_html_before>
         </events>
     </adminhtml>
 </config>

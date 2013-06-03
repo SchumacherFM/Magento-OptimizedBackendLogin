@@ -2,3 +2,4 @@ src/app/code/community/SchumacherFM/OptBeLogin app/code/community/SchumacherFM/O
 src/app/etc/modules/SchumacherFM_OptBeLogin.xml app/etc/modules/SchumacherFM_OptBeLogin.xml
 src/app/locale/en_US/SchumacherFM_OptBeLogin.csv app/locale/en_US/SchumacherFM_OptBeLogin.csv
 src/app/locale/de_DE/SchumacherFM_OptBeLogin.csv app/locale/de_DE/SchumacherFM_OptBeLogin.csv
+src/app/design/adminhtml/default/default/template/optbelogin app/design/adminhtml/default/default/template/optbelogin
