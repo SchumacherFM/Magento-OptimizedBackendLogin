@@ -2,10 +2,11 @@ Magento Optimized Backend Login
 ===============================
 
 * Sets the autocomplete html form attribute depending on the environment.
-* Disable the logo
+* Disables the logo
 * Setting custom background color
+* Disables Forgot your Password link
 
-This module is only for the Magento backend.
+This module is only for the Magento backend. All options are configurable in the backend configuration developer section.
 
 Installation Instructions
 -------------------------
