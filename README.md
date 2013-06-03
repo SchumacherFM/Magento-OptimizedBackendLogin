@@ -1,7 +1,9 @@
 Magento Optimized Backend Login
 ===============================
 
-Sets the autocomplete html form attribute depending on the environment.
+* Sets the autocomplete html form attribute depending on the environment.
+* Disable the logo
+* Setting custom background color
 
 This module is only for the Magento backend.
 
@@ -10,13 +12,13 @@ Installation Instructions
 1. Install modman from https://github.com/colinmollenhour/modman
 2. Switch to Magento root folder
 3. `modman init`
-4. `modman clone git://github.com/SchumacherFM/MagentoOptimizedBackendLogin.git`
+4. `modman clone git://github.com/SchumacherFM/Magento-OptimizedBackendLogin.git`
 
 About
 -----
 - Key: SchumacherFM_OptBeLogin
 - Current Version 1.0.0
-- [Download tarball](https://github.com/SchumacherFM/MagentoOptimizedBackendLogin/tags)
+- [Download tarball](https://github.com/SchumacherFM/Magento-OptimizedBackendLogin/tags)
 
 Compatibility
 -------------

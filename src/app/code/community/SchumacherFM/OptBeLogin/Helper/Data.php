@@ -12,6 +12,7 @@ class SchumacherFM_OptBeLogin_Helper_Data extends Mage_Core_Helper_Abstract
     protected $_versionMapper = array(
         '1.13' => '1.8',
         '1.8'  => '1.8',
+        '1.7'  => '1.8',
     );
 
     const XML_PATH_DOMAIN_PREFIX = 'dev/optbelogin/domain_';
