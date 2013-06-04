@@ -7,7 +7,7 @@
 <config>
     <modules>
         <SchumacherFM_OptBeLogin>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
         </SchumacherFM_OptBeLogin>
     </modules>
 
@@ -21,12 +21,21 @@
             <optbelogin>
                 <class>SchumacherFM_OptBeLogin_Block</class>
             </optbelogin>
+
+            <captcha>
+                <rewrite>
+                    <captcha_zend>SchumacherFM_OptBeLogin_Block_Captcha_Zend</captcha_zend>
+                </rewrite>>
+            </captcha>
+
         </blocks>
         <helpers>
             <optbelogin>
                 <class>SchumacherFM_OptBeLogin_Helper</class>
             </optbelogin>
         </helpers>
+
+
     </global>
 
     <adminhtml>

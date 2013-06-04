@@ -5,6 +5,7 @@ Magento Optimized Backend Login
 * Disables the logo
 * Setting a custom background color
 * Disables "Forgot your Password" link
+* Switch on minimalistic login and captcha form
 
 This module is only for the Magento backend. All options are configurable in the backend configuration developer section.
 
@@ -18,7 +19,7 @@ Installation Instructions
 About
 -----
 - Key: SchumacherFM_OptBeLogin
-- Current Version 1.0.0
+- Current Version 1.1.0
 - [Download tarball](https://github.com/SchumacherFM/Magento-OptimizedBackendLogin/tags)
 
 Compatibility

@@ -20,11 +20,15 @@ class SchumacherFM_OptBeLogin_Model_Observer
         $helper = Mage::helper('optbelogin');
 
         $templatePath = array(
-            'optbelogin',
-            $helper->getMagentoEdition(),
-            $helper->getMagentoVersion(),
-            'login.phtml'
+            'optbelogin'
         );
+        if ($helper->isMinimalLogin()) {
+            $templatePath[] = 'login-min.phtml';
+        } else {
+            $templatePath[] = $helper->getMagentoEdition();
+            $templatePath[] = $helper->getMagentoVersion();
+            $templatePath[] = 'login.phtml';
+        }
 
         $block
             ->setTemplate(implode(DS, $templatePath))

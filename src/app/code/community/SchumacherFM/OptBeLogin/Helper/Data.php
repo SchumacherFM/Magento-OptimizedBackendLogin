@@ -81,4 +81,12 @@ class SchumacherFM_OptBeLogin_Helper_Data extends Mage_Core_Helper_Abstract
         return Mage::getStoreConfig('dev/optbelogin/form_color');
     }
 
+    /**
+     * @return bool
+     */
+    public function isMinimalLogin()
+    {
+        return Mage::getStoreConfigFlag('dev/optbelogin/minimal_login');
+    }
+
 }
