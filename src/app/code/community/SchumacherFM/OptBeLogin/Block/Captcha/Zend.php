@@ -45,6 +45,7 @@ class SchumacherFM_OptBeLogin_Block_Captcha_Zend extends Mage_Captcha_Block_Capt
         /** @var SchumacherFM_OptBeLogin_Helper_Data $helper */
         $helper = Mage::helper('optbelogin');
 
+        // @todo isAdmin login ;-)
         if ($helper->isMinimalLogin()) {
             return $this->getIsAjax() ? '' : $this->_minTemplate;
         }
