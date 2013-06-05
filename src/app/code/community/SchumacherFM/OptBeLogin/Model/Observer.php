@@ -1,6 +1,6 @@
 <?php
 /**
- * @author kiri
+ * @author Cyrill AT Schumacher dot fm @SchumacherFM
  * @date   6/3/13
  */
 
@@ -18,15 +18,7 @@ class SchumacherFM_OptBeLogin_Model_Observer
             return null;
         }
 
-        /** @var SchumacherFM_OptBeLogin_Helper_Data $helper */
-        $helper = Mage::helper('optbelogin');
-
-        $block
-            ->setTemplate($this->_getTemplatePath($template))
-            ->setAutoComplete($helper->getAutoComplete())
-            ->setDisableForgotPasswordLink($helper->getDisableForgotPasswordLink())
-            ->setDisableLogo($helper->getDisableLogo())
-            ->setFormColor($helper->getFormColor());
+        $block->setTemplate($this->_getTemplatePath($template));
 
     }
 

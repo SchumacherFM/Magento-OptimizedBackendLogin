@@ -25,7 +25,7 @@
             <captcha>
                 <rewrite>
                     <captcha_zend>SchumacherFM_OptBeLogin_Block_Captcha_Zend</captcha_zend>
-                </rewrite>>
+                </rewrite>
             </captcha>
 
         </blocks>
@@ -50,15 +50,12 @@
         </translate>
         <events>
             <adminhtml_block_html_before>
-
-                    <observers>
-                        <OptBeLogin_SetTemplate>
-                            <class>optbelogin/observer</class>
-                            <method>setAdminLoginTemplate</method>
-                        </OptBeLogin_SetTemplate>
-                    </observers>
-
-
+                <observers>
+                    <OptBeLogin_SetTemplate>
+                        <class>optbelogin/observer</class>
+                        <method>setAdminLoginTemplate</method>
+                    </OptBeLogin_SetTemplate>
+                </observers>
             </adminhtml_block_html_before>
         </events>
     </adminhtml>

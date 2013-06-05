@@ -9,8 +9,6 @@
 class SchumacherFM_OptBeLogin_Helper_Data extends Mage_Core_Helper_Abstract
 {
 
-    protected $_data = array();
-
     protected $_versionMapper = array(
         '1.13' => '1.8',
         '1.8'  => '1.8',
@@ -100,26 +98,18 @@ class SchumacherFM_OptBeLogin_Helper_Data extends Mage_Core_Helper_Abstract
     }
 
     /**
-     * @todo implement it
-     * @return mixed
+     * @return string
      */
-    public function getLogoSrc()
+    public function getHtmlLogo()
     {
-        if (empty($this->_data['logo_src'])) {
-            $this->_data['logo_src'] = Mage::getStoreConfig('design/header/logo_src');
+        $logoAlt = Mage::getStoreConfig('design/header/logo_alt');
+        $logoSrc = Mage::getStoreConfig('design/header/logo_src');
+        if (empty($logoSrc) || !$this->isDisplayStoreLogo()) {
+            return '';
         }
-        return $this->getSkinUrl($this->_data['logo_src']);
+        $logoUrl = Mage::getDesign()->getSkinUrl($logoSrc);
+        return '<img class="optLogo" src="' . $logoUrl . '" alt="' . $logoAlt . '" title="' . $logoAlt . '"/>';
+
     }
 
-    /**
-     * @todo implement it
-     * @return mixed
-     */
-    public function getLogoAlt()
-    {
-        if (empty($this->_data['logo_alt'])) {
-            $this->_data['logo_alt'] = Mage::getStoreConfig('design/header/logo_alt');
-        }
-        return $this->_data['logo_alt'];
-    }
 }
