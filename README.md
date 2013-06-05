@@ -2,10 +2,10 @@ Magento Optimized Backend Login
 ===============================
 
 * Sets the autocomplete html form attribute depending on the environment. (Allows you to store the password in the browser during development)
-* Disables the logo
+* Show Magento logo: yes/no
 * Setting a custom background color
-* Disables "Forgot your Password" link
-* Switch on minimalistic login & forgotpassword form with even minimalistic captcha
+* Show "Forgot your Password" link: yes/no
+* Switch on minimalistic login & forgotpassword form with even minimalistic captcha (no JS will be loaded)
 * Display optionally store owner logo in login form
 * Adds accidentally more security to the Magento CE 1.7 and EE 1.12 login form
 
