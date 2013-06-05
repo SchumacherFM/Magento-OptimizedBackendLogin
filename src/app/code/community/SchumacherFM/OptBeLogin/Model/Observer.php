@@ -1,9 +1,11 @@
 <?php
 /**
- * @author Cyrill AT Schumacher dot fm @SchumacherFM
- * @date   6/3/13
+ * @category    SchumacherFM_OptBeLogin
+ * @package     Model
+ * @author      Cyrill at Schumacher dot fm / @SchumacherFM
+ * @copyright   Copyright (c)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
-
 class SchumacherFM_OptBeLogin_Model_Observer
 {
 
