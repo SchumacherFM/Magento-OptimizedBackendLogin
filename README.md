@@ -7,6 +7,7 @@ Magento Optimized Backend Login
 * Disables "Forgot your Password" link
 * Switch on minimalistic login & forgotpassword form with even minimalistic captcha
 * Display optionally store owner logo in login form
+* Adds accidentally more security to the Magento CE 1.7 and EE 1.12 login form
 
 This module is only for the Magento backend. All options are configurable in the backend configuration developer section.
 
@@ -25,9 +26,11 @@ About
 
 Compatibility
 -------------
-- Magento >= 1.8
-- Magento EE >= 1.13
+- Magento >= 1.7
+- Magento EE >= 1.12
 - php >= 5.2.0
+
+Not tested with previous versions ... but could work.
 
 Support / Contribution
 ----------------------
