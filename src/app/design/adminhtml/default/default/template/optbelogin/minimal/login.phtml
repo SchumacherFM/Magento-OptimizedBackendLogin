@@ -2,14 +2,16 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="robots" content="noindex,nocache">
     <title><?php echo Mage::helper('adminhtml')->__('Admin Page Login') ?></title>
     <style type="text/css">
+        pre {
+            padding: 1em;
+        }
         form {
         <?php if($this->getFormColor()): ?>
             background-color : <?php echo $this->getFormColor()?>;
         <?php endif; ?>
-            width : 20em;
+            width : 22em;
             margin : 10em auto;
         }
         input {
@@ -18,7 +20,6 @@
     </style>
 </head>
 <body>
-
 <form method="post" action="" autocomplete="<?php echo $this->getAutoComplete(); ?>">
     <input name="form_key" type="hidden" value="<?php echo $this->getFormKey() ?>"/>
 <pre>

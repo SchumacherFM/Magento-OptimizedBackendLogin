@@ -12,31 +12,59 @@ class SchumacherFM_OptBeLogin_Model_Observer
         /** @var Mage_Adminhtml_Block_Template $block */
         $block = $observer->getEvent()->getBlock();
 
-        if (!$block instanceof Mage_Adminhtml_Block_Template || $block->getTemplate() !== 'login.phtml') {
+        $template = $this->_getTemplateName($block);
+
+        if (!$block instanceof Mage_Adminhtml_Block_Template || !$template) {
             return null;
         }
 
         /** @var SchumacherFM_OptBeLogin_Helper_Data $helper */
         $helper = Mage::helper('optbelogin');
 
-        $templatePath = array(
-            'optbelogin'
-        );
-        if ($helper->isMinimalLogin()) {
-            $templatePath[] = 'login-min.phtml';
-        } else {
-            $templatePath[] = $helper->getMagentoEdition();
-            $templatePath[] = $helper->getMagentoVersion();
-            $templatePath[] = 'login.phtml';
-        }
-
         $block
-            ->setTemplate(implode(DS, $templatePath))
+            ->setTemplate($this->_getTemplatePath($template))
             ->setAutoComplete($helper->getAutoComplete())
             ->setDisableForgotPasswordLink($helper->getDisableForgotPasswordLink())
             ->setDisableLogo($helper->getDisableLogo())
             ->setFormColor($helper->getFormColor());
 
+    }
+
+    /**
+     * @param string $type
+     *
+     * @return string
+     */
+    protected function _getTemplatePath($type)
+    {
+        $templatePath = array(
+            'optbelogin'
+        );
+
+        if (Mage::helper('optbelogin')->isMinimalLogin()) {
+            $templatePath[] = 'minimal';
+            $templatePath[] = $type . '.phtml';
+        } else {
+            $templatePath[] = Mage::helper('optbelogin')->getMagentoEdition();
+            $templatePath[] = Mage::helper('optbelogin')->getMagentoVersion();
+            $templatePath[] = $type . '.phtml';
+        }
+        return implode(DS, $templatePath);
+    }
+
+    /**
+     * @param Mage_Adminhtml_Block_Template $block
+     *
+     * @return string|bool
+     */
+    protected function _getTemplateName(Mage_Adminhtml_Block_Template $block)
+    {
+        $tpl                = basename($block->getTemplate(), '.phtml');
+        $availableTemplates = array(
+            'login'          => 'login',
+            'forgotpassword' => 'forgotpassword',
+        );
+        return isset($availableTemplates[$tpl]) ? $availableTemplates[$tpl] : FALSE;
     }
 
 }
