@@ -52,7 +52,7 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
-                            <comment>stristr() will be used</comment>
+                            <comment>Disable Autocomplete on development or staging area. Stristr() will be used</comment>
                         </domain_local>
                         <domain_acc translate="label">
                             <label>Staging / Acceptance Domain</label>
@@ -61,7 +61,7 @@
                             <show_in_default>1</show_in_default>
                             <show_in_website>0</show_in_website>
                             <show_in_store>0</show_in_store>
-                            <comment>stristr() will be used</comment>
+                            <comment>Disable Autocomplete on development or staging area. Stristr() will be used</comment>
                         </domain_acc>
 
                         <minimal_login translate="label">

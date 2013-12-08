@@ -18,10 +18,15 @@ Installation Instructions
 3. `modman init`
 4. `modman clone git://github.com/SchumacherFM/Magento-OptimizedBackendLogin.git`
 
+Configuration
+-------------
+
+Please navigate to System -> Configuration -> Developer -> Optimized Backend Login
+
 About
 -----
 - Key: SchumacherFM_OptBeLogin
-- Current Version 1.1.0
+- Current Version 1.1.1
 - [Download tarball](https://github.com/SchumacherFM/Magento-OptimizedBackendLogin/tags)
 
 Compatibility
@@ -45,3 +50,5 @@ Author
 ------
 
 [Cyrill Schumacher](https://github.com/SchumacherFM)
+
+[My pgp public key](http://www.schumacher.fm/cyrill.asc)

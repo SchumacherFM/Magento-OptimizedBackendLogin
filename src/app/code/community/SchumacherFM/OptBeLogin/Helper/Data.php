@@ -36,7 +36,11 @@ class SchumacherFM_OptBeLogin_Helper_Data extends Mage_Core_Helper_Abstract
      */
     public function isDomainArea($area = 'local')
     {
-        return stristr($_SERVER['HTTP_HOST'], Mage::getStoreConfig(self::XML_PATH_DOMAIN_PREFIX . $area)) !== FALSE;
+        $cfg = Mage::getStoreConfig(self::XML_PATH_DOMAIN_PREFIX . $area);
+        if (empty($cfg)) {
+            return FALSE;
+        }
+        return stristr($_SERVER['HTTP_HOST'], $cfg) !== FALSE;
     }
 
     /**
@@ -109,7 +113,5 @@ class SchumacherFM_OptBeLogin_Helper_Data extends Mage_Core_Helper_Abstract
         }
         $logoUrl = Mage::getDesign()->getSkinUrl($logoSrc);
         return '<img class="optLogo" src="' . $logoUrl . '" alt="' . $logoAlt . '" title="' . $logoAlt . '"/>';
-
     }
-
 }
