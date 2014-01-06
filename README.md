@@ -28,6 +28,7 @@ About
 - Key: SchumacherFM_OptBeLogin
 - Current Version 1.1.1
 - [Download tarball](https://github.com/SchumacherFM/Magento-OptimizedBackendLogin/tags)
+- Donation: [http://www.seashepherd.org/](http://www.seashepherd.org/)
 
 Compatibility
 -------------
@@ -44,11 +45,12 @@ Report a bug using the issue tracker or send us a pull request.
 
 Licence
 -------
+
 [OSL - Open Software Licence 3.0](http://opensource.org/licenses/osl-3.0.php)
 
 Author
 ------
 
-[Cyrill Schumacher](https://github.com/SchumacherFM)
+[Cyrill Schumacher](https://github.com/SchumacherFM) - [My pgp public key](http://www.schumacher.fm/cyrill.asc)
 
-[My pgp public key](http://www.schumacher.fm/cyrill.asc)
+If you consider a donation please contribute to: [http://www.seashepherd.org/](http://www.seashepherd.org/)
